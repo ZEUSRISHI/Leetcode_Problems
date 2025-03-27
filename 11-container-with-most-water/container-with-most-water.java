@@ -2,23 +2,22 @@ class Solution {
     public int maxArea(int[] arr) {
         int left = 0;
         int right = arr.length-1;
-        int asdf=0;
-        int asdfg=0;
+        int asd=0;
+        int csd=0;
         while(left<right){
             if(arr[left]<arr[right]){
-                asdf=arr[left]*(right-left);
+                asd=arr[left]*(right-left);
                 left++;
             }
             else{
-                asdf=arr[right]*(right-left);
+                asd=arr[right]*(right-left);
                 right--;
             }
 
-            if(asdfg<asdf){
-                asdfg=asdf;
+            if(csd<asd){
+                csd=asd;
             }
-
         }
-        return asdfg;
+        return csd;
     }
 }
